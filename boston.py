@@ -145,7 +145,7 @@ st.write('---')
 # https://github.com/slundberg/shap
 explainer = shap.TreeExplainer(model)
 shap_values = explainer.shap_values(X)
-if st.button('Show SHAO Graphs'):
+if st.button('Show SHAP Graphs'):
     st.header('Feature Importance')
     plt.title('Feature importance based on SHAP values')
     shap.summary_plot(shap_values, X)
